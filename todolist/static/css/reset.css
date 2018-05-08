@@ -1,0 +1,66 @@
+* {
+  	box-sizing: border-box;
+}
+*:before, *:after {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, a, address, del, em, img, small, strong, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, input {
+  border: 0 none;
+  /*font-size: inherit;*/
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  /* 在X5新内核Blink中，在排版页面的时候，会主动对字体进行放大，会检测页面中的主字体，当某一块字体在我们的判定规则中，认为字号较小，并且是页面中的主要字体，就会采取主动放大的操作。然而这不是我们想要的，可以采取给最大高度解决 */
+  max-height: 100000px;
+}
+textarea{resize:none;-webkit-appearance: none;}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+i, em, strong {
+  font-style: normal;
+  font-weight:normal;
+}
+i, em, strong {
+  font-style: normal;
+  font-weight:normal;
+}
+ul, ol, li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+q:before, q:after { content: ''; }
+img{
+	border:none; /* img 搭车：让链接里的 img 无边框 */
+	vertical-align: middle;
+}
+/*清除浮动元素*/
+.clearfix:after{
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+
+/* 注：optgroup 无法扶正 */
+button, input, select, textarea {
+    font-size: 100%; /* 使得表单元素在 ie 下能继承字体大小 */
+	outline:none;
+	border:0;
+	-webkit-appearance:none;
+	-moz-appearance: none;
+}
+/* 重置表格元素 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.fl{float: left;}
+.fr{float: right;}
